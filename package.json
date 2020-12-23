@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-deploy",
+  "name": "@streamrail/ember-cli-deploy",
   "description": "An Ember-CLI Addon for `Lightning Fast Deployments of Ember-CLI Apps`",
   "version": "0.4.3",
   "directories": {
