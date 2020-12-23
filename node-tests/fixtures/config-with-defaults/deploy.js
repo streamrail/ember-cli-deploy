@@ -1,8 +1,6 @@
 module.exports = {
   "development": {
-    "build": {
-      "environment": "development"
-    },
+    "buildEnv": "production",
     "buildPath": "tmp/deploy-dist/",
     "indexFiles": null,
     "manifestPrefix": "foo",
@@ -10,7 +8,7 @@ module.exports = {
     "store": {
       "host": "localhost",
       "manifestSize": 10,
-      "port": 6379,
+      "port": 63790,
       "type": "redis"
     },
     "assets": {
@@ -25,9 +23,7 @@ module.exports = {
   },
 
   "staging": {
-    "build": {
-      "environment": "production"
-    },
+    "buildEnv": "staging",
     "buildPath": "tmp/deploy-dist/",
     "indexFiles": null,
     "manifestPrefix": "foo",
@@ -45,8 +41,8 @@ module.exports = {
       "exclude": [],
       "gzip": true,
       "prefix": "<optional-remote-prefix>",
-      "gzipExtensions": ["js", "css", "svg"],
+      "gzipExtensions": ["js", "css", "svg", "json"],
       "type": "s3"
     }
   }
-};
+}
